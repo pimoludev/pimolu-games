@@ -962,6 +962,7 @@ export default function Home() {
             <Box className="setup-fields">
               <Input
                 label="Your battlefield name"
+                fullWidth
                 placeholder="E.g. Ghost_07"
                 value={pseudo}
                 onValueChange={setPseudo}

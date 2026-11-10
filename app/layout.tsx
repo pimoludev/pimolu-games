@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   ),
-  title: "NEXUS — Un monde. Vos règles. | Pimolu Games",
+  title: "Pimolu Games — Un monde. Vos règles.",
   description:
-    "Découvrez NEXUS, un concept FPS immersif : Battle Royale, multijoueur et Battle Pass Fracture. Une expérience créée avec Pimolu UI.",
+    "Découvrez Pimolu Games, un concept FPS immersif : Battle Royale, multijoueur et Battle Pass Fracture. Une expérience créée avec Pimolu UI.",
   openGraph: {
-    title: "NEXUS — Un monde. Vos règles.",
+    title: "Pimolu Games — Un monde. Vos règles.",
     description: "Le concept FPS signé Pimolu Games.",
     locale: "fr_FR",
     type: "website",

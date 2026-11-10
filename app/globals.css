@@ -166,7 +166,7 @@ button {
   font-family: var(--font-display), Impact, sans-serif;
   font-style: italic;
   font-weight: 800;
-  font-size: 34px;
+  font-size: 28px;
   letter-spacing: -1px;
   line-height: 1;
 }
@@ -1421,7 +1421,7 @@ button {
     padding-right: 10px;
   }
   .wordmark > span:not(.wordmark-dot) {
-    font-size: 29px;
+    font-size: 26px;
   }
   .wordmark > svg {
     width: 24px;

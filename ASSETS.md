@@ -1,6 +1,6 @@
 # Crédits des visuels
 
-NEXUS est une vitrine fictive de Pimolu UI, sans affiliation avec Microsoft ou Halo Studios. Les modes, noms de récompenses et saisons sont des contenus de démonstration.
+Pimolu Games est une vitrine fictive de Pimolu UI, sans affiliation avec Microsoft ou Halo Studios. Les modes, noms de récompenses et saisons sont des contenus de démonstration.
 
 Les images de Halo Infinite appartiennent à leurs ayants droit. Elles servent de références visuelles pour ce prototype ; elles ne sont pas distribuées sous la licence de Pimolu UI. Pour exploiter ce template pour un autre jeu, les remplacer par ses propres visuels ou obtenir les droits nécessaires.
 

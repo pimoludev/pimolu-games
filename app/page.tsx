@@ -69,7 +69,7 @@ function Mark() {
   return (
     <Box className="wordmark">
       <Zap fill="currentColor" aria-hidden="true" />
-      <Text>NEXUS</Text>
+      <Text>PIMOLU GAMES</Text>
       <Text className="wordmark-dot">®</Text>
     </Box>
   );
@@ -161,7 +161,7 @@ export default function Home() {
           open={menuOpen}
           onOpenChange={setMenuOpen}
         >
-          <NavbarBrand href="#" aria-label="Nexus — accueil">
+          <NavbarBrand href="#" aria-label="Pimolu Games — accueil">
             <Mark />
           </NavbarBrand>
           <NavbarToggle
@@ -232,7 +232,7 @@ export default function Home() {
             <Paragraph className="hero-description">
               L’instinct d’un survivant. La force d’une escouade.
               <br />
-              Entrez dans NEXUS et laissez votre empreinte.
+              Entrez dans Pimolu Games et laissez votre empreinte.
             </Paragraph>
             <Box className="hero-actions">
               <Button
@@ -279,7 +279,7 @@ export default function Home() {
               <ArrowDown size={15} /> LE TERRAIN VOUS ATTEND
             </Link>
             <Text className="hero-edition">
-              NEXUS / FRACTURE <Text>—</Text> VOL. 04
+              PIMOLU GAMES / FRACTURE <Text>—</Text> VOL. 04
             </Text>
           </Box>
         </Box>
@@ -557,7 +557,7 @@ export default function Home() {
         >
           <Box className="section-heading">
             <Box>
-              <Text className="eyebrow">04 / LE SIGNAL NEXUS</Text>
+              <Text className="eyebrow">04 / LE SIGNAL PIMOLU GAMES</Text>
               <Heading id="news-title" className="section-title">
                 DANS LE <Text>VISEUR.</Text>
               </Heading>
@@ -651,9 +651,9 @@ export default function Home() {
           </Box>
           <Accordion collapsible className="faq-list">
             <AccordionItem value="concept">
-              <AccordionTrigger>Qu’est-ce que NEXUS ?</AccordionTrigger>
+              <AccordionTrigger>Qu’est-ce que Pimolu Games ?</AccordionTrigger>
               <AccordionContent>
-                NEXUS est un concept de site de jeu FPS créé par Pimolu Games
+                Pimolu Games est un concept de site de jeu FPS conçu
                 pour présenter Pimolu UI. Les modes, saisons et récompenses sont
                 fictifs. Ce site est une expérience interactive de
                 démonstration, sans jeu téléchargeable ni serveur multijoueur.
@@ -790,7 +790,7 @@ export default function Home() {
                 Choisir ce mode
               </Button>
               <Text className="dialog-note">
-                Mode imaginé pour le concept NEXUS.
+                Mode imaginé pour le concept Pimolu Games.
               </Text>
             </>
           )}
@@ -891,7 +891,7 @@ export default function Home() {
                 {articles[article].detail}
               </Paragraph>
               <Text className="dialog-note">
-                Carnet de création · Univers fictif NEXUS
+                Carnet de création · Univers fictif Pimolu Games
               </Text>
             </>
           )}
@@ -928,7 +928,7 @@ export default function Home() {
                 {platform} · {pseudo.trim()}
               </Text>
               <Paragraph>
-                NEXUS est un concept créatif : aucune partie réelle n’est
+                Pimolu Games est un concept créatif : aucune partie réelle n’est
                 lancée. Explorez les modes, les récompenses et les images pour
                 prolonger l’expérience.
               </Paragraph>
@@ -1001,7 +1001,7 @@ export default function Home() {
           <DialogHeader>
             <DialogTitle>Les images derrière l’univers.</DialogTitle>
             <DialogDescription>
-              NEXUS est une vitrine indépendante de Pimolu UI. Les images de
+              Pimolu Games est une vitrine indépendante de Pimolu UI. Les images de
               Halo Infinite illustrent le concept et restent la propriété de
               leurs ayants droit. Aucune affiliation avec Microsoft ou Halo
               Studios.

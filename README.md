@@ -1,4 +1,4 @@
-# NEXUS · Pimolu Games
+# Pimolu Games
 
 Template de site FPS en français, construit avec **Next.js 16**, **React 19**, **Pimolu UI** et **Lucide**. Direction artistique sombre, accents vert électrique, typographie Barlow Condensed et visuels cinématiques.
 
@@ -39,6 +39,6 @@ Les éléments d’interface utilisent Pimolu UI : `Navbar`, `Button`, `Card`, `
 
 ## Périmètre
 
-NEXUS est un jeu fictif et ce dépôt est un **template de site**, sans moteur de jeu, matchmaking, téléchargement, authentification ou paiement. Les profils de démonstration sont enregistrés uniquement sous la clé `nexus-player` du `localStorage`. Aucune information n’est envoyée à un serveur.
+Pimolu Games est un jeu fictif et ce dépôt est un **template de site**, sans moteur de jeu, matchmaking, téléchargement, authentification ou paiement. Les profils de démonstration sont enregistrés uniquement sous la clé `nexus-player` du `localStorage`. Aucune information n’est envoyée à un serveur.
 
 Les images de Halo Infinite servent de références visuelles et ne sont pas des assets libres. Sources et conditions de réutilisation : [ASSETS.md](./ASSETS.md).

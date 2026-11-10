@@ -1120,40 +1120,157 @@ button {
 .rewards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-top: 18px;
+  gap: 12px;
+  margin-top: 14px;
+}
+.pass-dialog {
+  width: min(1080px, calc(100vw - 40px)) !important;
+  max-width: min(1080px, calc(100vw - 40px)) !important;
+  padding: 22px !important;
+}
+.pass-dialog-banner {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #48583b;
+  border-radius: 8px;
+  background: #283d2d;
+  margin-bottom: 24px;
+}
+.pass-dialog-banner-image,
+.pass-dialog-banner-image img,
+.pass-dialog-banner-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.pass-dialog-banner-image img {
+  object-fit: cover;
+  object-position: 50% 43%;
+}
+.pass-dialog-banner-shade {
+  background: linear-gradient(90deg, #0d170ff0 0%, #101c10a8 48%, #101c1040 100%), linear-gradient(0deg, #11171270, transparent 70%);
+}
+.pass-dialog-banner-copy {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 30px;
+}
+.pass-dialog-banner-title {
+  font-family: var(--font-display);
+  font-size: clamp(58px, 8vw, 92px);
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 0.9;
+  color: #f1f5e9;
+}
+.pass-dialog-banner-subtitle {
+  font-family: var(--font-geist-mono);
+  font-size: 9px;
+  color: var(--accent);
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+.pass-dialog .pass-dialog-header {
+  margin-bottom: 18px;
+}
+.pass-dialog .pimolu-dialog__title {
+  font-size: clamp(34px, 4vw, 48px);
+  margin-block: 8px;
+}
+.pass-dialog .pimolu-dialog__description {
+  max-width: 680px;
+}
+.pass-dialog .pimolu-tabs {
+  margin-top: 10px;
+}
+.pass-rewards-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.pass-rewards-heading > span:last-child {
+  font-family: var(--font-geist-mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #a8b89a;
 }
 .nexus-dialog .reward-card {
   padding: 0;
   overflow: hidden;
   border: 1px solid #39422f;
   background: #192016;
+  border-radius: 8px;
 }
-.reward-card .pimolu-image {
-  height: 160px;
+.reward-art {
+  position: relative;
+  height: 175px;
+  overflow: hidden;
+  background: #303b32;
+}
+.reward-art .pimolu-image {
+  height: 100%;
   width: 100%;
 }
-.reward-card img {
+.reward-art img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 250ms ease;
 }
-.reward-card > div:last-child {
-  padding: 12px;
+.reward-card:hover .reward-art img {
+  transform: scale(1.04);
+}
+.reward-level-chip {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  background: #0e1710e6;
+  color: #d5ff84;
+  border: 1px solid #8fbd56a1;
+  font-family: var(--font-geist-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.reward-info {
+  min-height: 100px;
+  padding: 14px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .reward-card h3 {
   font-family: var(--font-display);
-  font-size: 20px;
-  font-weight: 500;
-  margin-block: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.05;
+  margin-block: 8px;
 }
 .reward-card .eyebrow {
-  font-size: 8px;
+  font-size: 9px;
 }
-.reward-card div > span:last-child {
+.reward-info > span:last-child {
   font-family: var(--font-geist-mono);
-  font-size: 7px;
+  font-size: 9px;
   color: #a2b18e;
+  margin-top: auto;
+}
+.rewards-grid[data-track="free"] {
+  grid-template-columns: minmax(220px, 255px);
+}
+.pass-dialog .track-description {
+  margin-block: 16px 4px;
+  max-width: 750px;
 }
 .track-description,
 .article-detail {
@@ -1270,6 +1387,17 @@ button {
   }
 }
 @media (max-width: 800px) {
+  .pass-dialog {
+    width: calc(100vw - 24px) !important;
+    max-width: calc(100vw - 24px) !important;
+    padding: 16px !important;
+  }
+  .pass-dialog-banner {
+    height: 145px;
+  }
+  .rewards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .page-width {
     width: calc(100% - 40px);
   }
@@ -1717,7 +1845,35 @@ button {
     justify-content: space-between;
   }
   .rewards-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pass-dialog-banner {
+    height: 125px;
+    margin-bottom: 16px;
+  }
+  .pass-dialog-banner-copy {
+    padding: 16px;
+  }
+  .pass-dialog-banner-title {
+    font-size: 58px;
+  }
+  .pass-dialog-banner-subtitle {
+    font-size: 7px;
+    letter-spacing: 2px;
+  }
+  .reward-art {
+    height: 140px;
+  }
+  .reward-info {
+    min-height: 94px;
+    padding: 11px !important;
+  }
+  .reward-card h3 {
+    font-size: 21px;
+  }
+  .rewards-grid[data-track="free"] {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 270px;
   }
   .nexus-dialog .pimolu-dialog__title {
     font-size: 29px;

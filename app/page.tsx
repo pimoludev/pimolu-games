@@ -111,7 +111,7 @@ export default function Home() {
   }
   function saveSetup() {
     if (pseudo.trim().length < 3) {
-      setSaveError("Choisissez un pseudo d'au moins 3 caractères.");
+      setSaveError("Choose a player name with at least 3 characters.");
       return;
     }
     try {
@@ -123,7 +123,7 @@ export default function Home() {
       setSaved(true);
     } catch {
       setSaveError(
-        "Le stockage de ce navigateur est indisponible. Votre configuration reste accessible tant que cette page est ouverte.",
+        "Browser storage is unavailable. Your setup will remain visible until you close this page.",
       );
     }
   }
@@ -142,12 +142,12 @@ export default function Home() {
       className="nexus"
     >
       <Link href="#main" className="skip-link">
-        Aller au contenu
+        Skip to content
       </Link>
       <Box className="announcement">
-        <Text className="announcement-label">NOUVEAU CHAPITRE</Text>
-        <Text>SAISON 04 : FRACTURE</Text>
-        <Link href="#battle-pass" aria-label="Découvrir la saison Fracture">
+        <Text className="announcement-label">NEW CHAPTER</Text>
+        <Text>SEASON 04: FRACTURE</Text>
+        <Link href="#battle-pass" aria-label="Explore the Fracture season">
           <ArrowUpRight size={14} />
         </Link>
       </Box>
@@ -161,21 +161,21 @@ export default function Home() {
           open={menuOpen}
           onOpenChange={setMenuOpen}
         >
-          <NavbarBrand href="#" aria-label="Pimolu Games — accueil">
+          <NavbarBrand href="#" aria-label="Pimolu Games — home">
             <Mark />
           </NavbarBrand>
           <NavbarToggle
             icon={<Menu />}
             closeIcon={<X />}
-            openLabel="Ouvrir le menu"
-            closeLabel="Fermer le menu"
+            openLabel="Open menu"
+            closeLabel="Close menu"
           />
-          <NavbarContent aria-label="Navigation principale">
+          <NavbarContent aria-label="Main navigation">
             {[
-              ["L’univers", "univers"],
-              ["Modes de jeu", "modes"],
+              ["The world", "univers"],
+              ["Game modes", "modes"],
               ["Battle Pass", "battle-pass"],
-              ["Actualités", "actualites"],
+              ["Updates", "actualites"],
             ].map(([label, id]) => (
               <NavbarItem
                 key={id}
@@ -188,14 +188,14 @@ export default function Home() {
           </NavbarContent>
           <NavbarActions>
             <Text className="nav-language">
-              <Globe2 size={14} /> FR
+              <Globe2 size={14} /> EN
             </Text>
             <Button
               className="cta nav-cta"
               onClick={() => openSetup()}
               endIcon={<ArrowUpRight size={16} />}
             >
-              Rejoindre l’aventure
+              Join the fight
             </Button>
           </NavbarActions>
         </Navbar>
@@ -210,7 +210,7 @@ export default function Home() {
         >
           <Image
             src="/images/hero.jpg"
-            alt="Soldat futuriste face à un monde montagneux et un immense anneau spatial"
+            alt="Futuristic soldier facing a mountainous world and a vast ring in the sky"
             containerClassName="hero-image"
             rounded="none"
             loading="eager"
@@ -222,17 +222,17 @@ export default function Home() {
           <Box className="page-width hero-content">
             <Box className="hero-eyebrow">
               <Text className="status-dot" />
-              <Text>UN NOUVEAU MONDE VOUS ATTEND</Text>
+              <Text>A NEW WORLD AWAITS</Text>
             </Box>
             <Heading level={1} id="hero-title" className="hero-title">
-              UN MONDE.
+              ONE WORLD.
               <br />
-              VOS <Text>RÈGLES.</Text>
+              YOUR <Text>RULES.</Text>
             </Heading>
             <Paragraph className="hero-description">
-              L’instinct d’un survivant. La force d’une escouade.
+              The instinct of a survivor. The strength of a squad.
               <br />
-              Entrez dans Pimolu Games et laissez votre empreinte.
+              Step into Pimolu Games and leave your mark.
             </Paragraph>
             <Box className="hero-actions">
               <Button
@@ -241,7 +241,7 @@ export default function Home() {
                 onClick={() => openSetup()}
                 endIcon={<ArrowUpRight size={19} />}
               >
-                Entrez dans l’arène
+                Enter the arena
               </Button>
               <Button
                 className="secondary-cta"
@@ -250,11 +250,11 @@ export default function Home() {
                 onClick={() => openGallery(0)}
                 startIcon={<ScanLine size={18} />}
               >
-                Explorer le gameplay
+                Explore gameplay
               </Button>
             </Box>
             <Box className="hero-platforms">
-              <Text>IMAGINÉ POUR</Text>
+              <Text>IMAGINED FOR</Text>
               <Text>
                 <Monitor size={16} /> PC
               </Text>
@@ -269,14 +269,14 @@ export default function Home() {
           <Box className="hero-coordinate" aria-hidden="true">
             <Crosshair size={22} />
             <Text>
-              SECTEUR 07
+              SECTOR 07
               <br />
               35° 41′ N · 139° 41′ E
             </Text>
           </Box>
           <Box className="hero-bottom page-width">
             <Link className="scroll-link" href="#modes">
-              <ArrowDown size={15} /> LE TERRAIN VOUS ATTEND
+              <ArrowDown size={15} /> THE BATTLEFIELD AWAITS
             </Link>
             <Text className="hero-edition">
               PIMOLU GAMES / FRACTURE <Text>—</Text> VOL. 04
@@ -286,16 +286,16 @@ export default function Home() {
         <Box className="feature-strip">
           <Box className="page-width feature-strip-inner">
             <Text>
-              <Crosshair /> FPS TACTIQUE
+              <Crosshair /> TACTICAL FPS
             </Text>
             <Text>
-              <Users /> PENSÉ POUR L’ESCOUADE
+              <Users /> BUILT FOR THE SQUAD
             </Text>
             <Text>
-              <Globe2 /> UN MONDE À CONQUÉRIR
+              <Globe2 /> A WORLD TO CLAIM
             </Text>
             <Text>
-              <Shield /> LE TALENT AVANT TOUT
+              <Shield /> SKILL ABOVE ALL
             </Text>
           </Box>
         </Box>
@@ -308,15 +308,15 @@ export default function Home() {
         >
           <Box className="section-heading">
             <Box>
-              <Text className="eyebrow">01 / CHOISISSEZ VOTRE TERRAIN</Text>
+              <Text className="eyebrow">01 / CHOOSE YOUR BATTLEGROUND</Text>
               <Heading id="modes-title" className="section-title">
-                À CHACUN SON <Text>COMBAT.</Text>
+                YOUR KIND OF <Text>COMBAT.</Text>
               </Heading>
             </Box>
             <Paragraph className="section-intro">
-              Seul contre tous ou unis pour la victoire.
+              Go it alone or fight for victory together.
               <br />
-              Une même intensité. Votre façon de jouer.
+              Same intensity. Your way to play.
             </Paragraph>
           </Box>
           <Box className="mode-grid">
@@ -328,7 +328,7 @@ export default function Home() {
                     src={`/images/${item.image}.jpg`}
                     alt={
                       item.name === "BATTLE ROYALE"
-                        ? "Vallée boisée et architecture futuriste"
+                        ? "Forested valley and futuristic architecture"
                         : item.tagline
                     }
                     containerClassName="mode-image"
@@ -353,9 +353,9 @@ export default function Home() {
                       appearance="ghost"
                       onClick={() => setMode(index)}
                       endIcon={<ArrowUpRight size={20} />}
-                      aria-label={`Découvrir le mode ${item.name}`}
+                      aria-label={`Explore ${item.name} mode`}
                     >
-                      Découvrir le mode
+                      Explore mode
                     </Button>
                   </Box>
                 </Card>
@@ -372,22 +372,22 @@ export default function Home() {
         >
           <Box className="page-width pass-layout">
             <Box className="pass-copy">
-              <Text className="eyebrow">02 / BATTLE PASS · SAISON 04</Text>
+              <Text className="eyebrow">02 / BATTLE PASS · SEASON 04</Text>
               <Heading id="pass-title" className="pass-title">
-                LAISSEZ
+                LEAVE
                 <br />
-                UNE <Text>TRACE.</Text>
+                YOUR <Text>MARK.</Text>
               </Heading>
               <Paragraph>
-                Devenez inoubliable. Explorez 100 paliers de récompenses et
-                façonnez votre identité sur le terrain.
+                Make every match memorable. Unlock 100 reward tiers and shape
+                your identity on the battlefield.
               </Paragraph>
               <Box className="pass-points">
                 <Text>
-                  <Layers3 size={17} /> 100 paliers
+                  <Layers3 size={17} /> 100 tiers
                 </Text>
                 <Text>
-                  <Sparkles size={17} /> Des récompenses exclusives
+                  <Sparkles size={17} /> Exclusive rewards
                 </Text>
               </Box>
               <Button
@@ -396,16 +396,16 @@ export default function Home() {
                 onClick={() => setPassOpen(true)}
                 endIcon={<ArrowUpRight size={18} />}
               >
-                Explorer le Battle Pass
+                Explore the Battle Pass
               </Button>
               <Text className="pass-note">
-                VOTRE STYLE ÉVOLUE. VOTRE TALENT FAIT LE RESTE.
+                YOUR STYLE EVOLVES. YOUR SKILL DOES THE REST.
               </Text>
             </Box>
             <Box className="pass-visual">
               <Image
                 src="/images/gameplay-0.jpg"
-                alt="Armure dorée du palier Souverain"
+                alt="Gold Sovereign armor reward"
                 containerClassName="pass-background"
                 rounded="none"
                 loading="lazy"
@@ -415,12 +415,12 @@ export default function Home() {
                 FRACTURE
               </Text>
               <Badge className="season-tag" appearance="outline">
-                <Diamond size={13} /> SAISON 04
+                <Diamond size={13} /> SEASON 04
               </Badge>
               <Box className="pass-featured">
-                <Text className="eyebrow">RÉCOMPENSE ULTIME</Text>
+                <Text className="eyebrow">ULTIMATE REWARD</Text>
                 <Heading level={3}>SOUVERAIN</Heading>
-                <Text>Armure légendaire · Palier 100</Text>
+                <Text>Legendary armor · Tier 100</Text>
               </Box>
               <Box className="reward-preview">
                 {rewards.slice(1).map((reward) => (
@@ -429,7 +429,7 @@ export default function Home() {
                     appearance="ghost"
                     className="reward-mini"
                     onClick={() => setPassOpen(true)}
-                    aria-label={`Voir ${reward.name}, palier ${reward.level}`}
+                    aria-label={`View ${reward.name}, tier ${reward.level}`}
                   >
                     <Image
                       src={`/images/${reward.image}.jpg`}
@@ -437,7 +437,7 @@ export default function Home() {
                       rounded="none"
                       style={{ objectPosition: reward.position }}
                     />
-                    <Text>PALIER {reward.level}</Text>
+                    <Text>TIER {reward.level}</Text>
                     <Diamond size={12} />
                   </Button>
                 ))}
@@ -454,25 +454,25 @@ export default function Home() {
         >
           <Box className="section-heading">
             <Box>
-              <Text className="eyebrow">03 / AU PLUS PRÈS DE L’ACTION</Text>
+              <Text className="eyebrow">03 / IN THE THICK OF IT</Text>
               <Heading id="gameplay-title" className="section-title">
-                ÇA NE SE RACONTE PAS.
+                WORDS CAN’T
                 <br />
-                <Text>ÇA SE VIT.</Text>
+                <Text>CAPTURE IT.</Text>
               </Heading>
             </Box>
             <Box className="gallery-heading-right">
               <Paragraph className="section-intro">
-                Chaque instant peut tout changer.
+                Every second can change everything.
                 <br />
-                Plongez au cœur du terrain.
+                Step into the action.
               </Paragraph>
               <Box className="gallery-controls">
                 <Button
                   appearance="outline"
                   iconOnly
                   startIcon={<ChevronLeft size={18} />}
-                  aria-label="Image précédente"
+                  aria-label="Previous image"
                   onClick={() =>
                     setGalleryIndex(
                       (galleryIndex + gallery.length - 1) % gallery.length,
@@ -486,7 +486,7 @@ export default function Home() {
                   appearance="outline"
                   iconOnly
                   startIcon={<ChevronRight size={18} />}
-                  aria-label="Image suivante"
+                  aria-label="Next image"
                   onClick={() =>
                     setGalleryIndex((galleryIndex + 1) % gallery.length)
                   }
@@ -499,7 +499,7 @@ export default function Home() {
               className="gallery-main media-button"
               appearance="ghost"
               onClick={() => openGallery(galleryIndex)}
-              aria-label={`Agrandir : ${gallery[galleryIndex].alt}`}
+              aria-label={`Expand: ${gallery[galleryIndex].alt}`}
             >
               <Image
                 src={gallery[galleryIndex].src}
@@ -509,7 +509,7 @@ export default function Home() {
               />
               <Box className="gallery-overlay">
                 <Text>
-                  <Text className="status-dot" /> IMMERSION TOTALE
+                  <Text className="status-dot" /> TOTAL IMMERSION
                 </Text>
                 <Maximize2 size={19} />
               </Box>
@@ -523,7 +523,7 @@ export default function Home() {
                     appearance="ghost"
                     key={index}
                     onClick={() => openGallery(index)}
-                    aria-label={`Agrandir : ${gallery[index].alt}`}
+                    aria-label={`Expand: ${gallery[index].alt}`}
                   >
                     <Image
                       src={gallery[index].src}
@@ -538,13 +538,13 @@ export default function Home() {
             </Box>
           </Box>
           <Box className="gallery-foot">
-            <Text>CAPTURES D’INSPIRATION · HALO INFINITE</Text>
+            <Text>GAMEPLAY INSPIRATION · HALO INFINITE</Text>
             <Button
               appearance="ghost"
               onClick={() => openGallery(0)}
               endIcon={<ArrowUpRight size={15} />}
             >
-              Voir toute la galerie
+              View full gallery
             </Button>
           </Box>
         </Box>
@@ -557,13 +557,13 @@ export default function Home() {
         >
           <Box className="section-heading">
             <Box>
-              <Text className="eyebrow">04 / LE SIGNAL PIMOLU GAMES</Text>
+              <Text className="eyebrow">04 / THE PIMOLU GAMES SIGNAL</Text>
               <Heading id="news-title" className="section-title">
-                DANS LE <Text>VISEUR.</Text>
+                IN THE <Text>CROSSFIRE.</Text>
               </Heading>
             </Box>
             <Text className="section-intro">
-              Les histoires derrière votre prochaine partie.
+              Stories from the world of Pimolu Games.
             </Text>
           </Box>
           <Box className="news-grid">
@@ -573,7 +573,7 @@ export default function Home() {
                   appearance="ghost"
                   className="news-image media-button"
                   onClick={() => setArticle(index)}
-                  aria-label={`Lire : ${item.title}`}
+                  aria-label={`Read: ${item.title}`}
                 >
                   <Image
                     src={`/images/${item.image}.jpg`}
@@ -594,7 +594,7 @@ export default function Home() {
                   onClick={() => setArticle(index)}
                   endIcon={<ArrowRight size={15} />}
                 >
-                  Lire le dossier
+                  Read the story
                 </Button>
               </Card>
             ))}
@@ -613,15 +613,15 @@ export default function Home() {
           <Box className="join-content page-width">
             <Crosshair size={34} strokeWidth={1.2} />
             <Text className="eyebrow">
-              LE PROCHAIN CHAPITRE S’ÉCRIT ENSEMBLE
+              THE NEXT CHAPTER STARTS TOGETHER
             </Text>
             <Heading id="join-title">
-              VOTRE ESCOUADE
+              YOUR SQUAD
               <br />
-              <Text>N’ATTEND QUE VOUS.</Text>
+              <Text>IS WAITING.</Text>
             </Heading>
             <Paragraph>
-              De grandes histoires commencent par une première partie.
+              Great stories begin with one match.
             </Paragraph>
             <Button
               className="cta"
@@ -629,10 +629,10 @@ export default function Home() {
               onClick={() => openSetup()}
               endIcon={<ArrowUpRight size={18} />}
             >
-              Rejoindre l’aventure
+              Join the adventure
             </Button>
             <Text className="join-signature">
-              PRENEZ POSITION. TROUVEZ VOTRE ÉQUIPE. MARQUEZ L’HISTOIRE.
+              TAKE POSITION. FIND YOUR TEAM. MAKE HISTORY.
             </Text>
           </Box>
         </Box>
@@ -644,42 +644,40 @@ export default function Home() {
           aria-labelledby="faq-title"
         >
           <Box>
-            <Text className="eyebrow">AVANT LE DÉPLOIEMENT</Text>
+            <Text className="eyebrow">BEFORE DEPLOYMENT</Text>
             <Heading id="faq-title" className="section-title">
-              BIEN <Text>PRÉPARÉ.</Text>
+              GOOD TO <Text>GO.</Text>
             </Heading>
           </Box>
           <Accordion collapsible className="faq-list">
             <AccordionItem value="concept">
-              <AccordionTrigger>Qu’est-ce que Pimolu Games ?</AccordionTrigger>
+              <AccordionTrigger>What is Pimolu Games?</AccordionTrigger>
               <AccordionContent>
-                Pimolu Games est un concept de site de jeu FPS conçu
-                pour présenter Pimolu UI. Les modes, saisons et récompenses sont
-                fictifs. Ce site est une expérience interactive de
-                démonstration, sans jeu téléchargeable ni serveur multijoueur.
+                Pimolu Games is an FPS website concept built to showcase Pimolu
+                UI. Its modes, seasons, and rewards are fictional. This is an
+                interactive demo, with no downloadable game or multiplayer
+                servers.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="pass">
               <AccordionTrigger>
-                Comment fonctionne le Battle Pass ?
+                How does the Battle Pass work?
               </AccordionTrigger>
               <AccordionContent>
-                Le concept propose 100 paliers, une piste gratuite et une piste
-                premium avec des éléments cosmétiques. L’aperçu permet de
-                comparer les récompenses. Aucun paiement ni achat n’est proposé
-                sur cette démonstration.
+                The concept features 100 tiers, with free and premium tracks
+                offering cosmetic items. You can compare the rewards in the
+                preview. Purchases and payments are unavailable in this demo.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="data">
               <AccordionTrigger>
-                Où est enregistrée ma configuration ?
+                Where is my setup saved?
               </AccordionTrigger>
               <AccordionContent>
-                Votre pseudo, votre plateforme et votre mode préféré sont
-                conservés uniquement dans le stockage local de votre navigateur.
-                Aucun compte n’est créé et aucune donnée n’est envoyée à un
-                serveur. Vous pouvez les effacer dans les paramètres de votre
-                navigateur.
+                Your nickname, platform, and preferred mode are saved only in
+                your browser’s local storage. No account is created, and no
+                data is sent to a server. You can clear it in your browser
+                settings.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -691,26 +689,26 @@ export default function Home() {
         appearance="transparent"
         bordered={false}
         brand={
-          <Link href="#" aria-label="Retour en haut">
+          <Link href="#" aria-label="Back to top">
             <Mark />
           </Link>
         }
-        description="Un monde. Vos règles."
+        description="One world. Your rules."
         columns={[
           {
-            title: "EXPLORER",
+            title: "EXPLORE",
             links: [
-              { label: "L’univers", href: "#univers" },
-              { label: "Modes de jeu", href: "#modes" },
+              { label: "The world", href: "#univers" },
+              { label: "Game modes", href: "#modes" },
               { label: "Battle Pass", href: "#battle-pass" },
             ],
           },
           {
-            title: "RESTER CONNECTÉ",
+            title: "STAY CONNECTED",
             links: [
-              { label: "Actualités", href: "#actualites" },
-              { label: "Galerie", href: "#gameplay" },
-              { label: "Questions fréquentes", href: "#questions" },
+              { label: "News", href: "#actualites" },
+              { label: "Gallery", href: "#gameplay" },
+              { label: "FAQ", href: "#questions" },
             ],
           },
           {
@@ -722,12 +720,12 @@ export default function Home() {
                 external: true,
               },
               {
-                label: "Les composants",
+                label: "Components",
                 href: "https://pimolu.com/components",
                 external: true,
               },
               {
-                label: "Code source",
+                label: "Source code",
                 href: "https://github.com/pimoludev/pimolu-games",
                 external: true,
               },
@@ -735,12 +733,12 @@ export default function Home() {
           },
         ]}
         copyright={
-          <Text>© 2026 PIMOLU GAMES · CONCEPT CRÉATIF, JEU FICTIF.</Text>
+          <Text>© 2026 PIMOLU GAMES · CREATIVE CONCEPT, FICTIONAL GAME.</Text>
         }
         bottom={
           <Box className="footer-bottom">
             <Button appearance="ghost" onClick={() => setCreditsOpen(true)}>
-              Crédits visuels
+              Image credits
             </Button>
             <Text>
               CRAFTED WITH{" "}
@@ -758,7 +756,7 @@ export default function Home() {
           if (!open) setMode(null);
         }}
       >
-        <DialogContent size="lg" closeLabel="Fermer" className="nexus-dialog">
+        <DialogContent size="lg" closeLabel="Close" className="nexus-dialog">
           {mode !== null && (
             <>
               <Image
@@ -787,10 +785,10 @@ export default function Home() {
                 onClick={() => openSetup(modes[mode].id)}
                 endIcon={<ArrowUpRight size={17} />}
               >
-                Choisir ce mode
+                Choose this mode
               </Button>
               <Text className="dialog-note">
-                Mode imaginé pour le concept Pimolu Games.
+                A fictional mode created for the Pimolu Games concept.
               </Text>
             </>
           )}
@@ -798,35 +796,56 @@ export default function Home() {
       </Dialog>
 
       <Dialog open={passOpen} onOpenChange={setPassOpen}>
-        <DialogContent size="lg" closeLabel="Fermer" className="nexus-dialog">
-          <DialogHeader>
-            <Text className="eyebrow">SAISON 04 / FRACTURE</Text>
-            <DialogTitle>100 paliers. Votre signature.</DialogTitle>
+        <DialogContent size="lg" closeLabel="Close" className="nexus-dialog pass-dialog">
+          <Box className="pass-dialog-banner">
+            <Image
+              src="/images/gameplay-5.jpg"
+              alt=""
+              containerClassName="pass-dialog-banner-image"
+              rounded="none"
+            />
+            <Box className="pass-dialog-banner-shade" />
+            <Box className="pass-dialog-banner-copy">
+              <Text className="eyebrow">PIMOLU GAMES / SEASON 04</Text>
+              <Text className="pass-dialog-banner-title">FRACTURE</Text>
+              <Text className="pass-dialog-banner-subtitle">FORGE YOUR LEGEND</Text>
+            </Box>
+          </Box>
+          <DialogHeader className="pass-dialog-header">
+            <Text className="eyebrow">THE BATTLE PASS / SEASON 04</Text>
+            <DialogTitle>100 tiers. One signature.</DialogTitle>
             <DialogDescription>
-              Découvrez une sélection des récompenses imaginées pour cette
-              saison. Des cosmétiques, aucun avantage en combat.
+              Discover a curated preview of this season’s rewards. Every item
+              is cosmetic, so your skill makes the difference.
             </DialogDescription>
           </DialogHeader>
           <Tabs defaultValue="premium">
-            <TabsList aria-label="Pistes du Battle Pass">
-              <TabsTrigger value="premium">Pass premium</TabsTrigger>
-              <TabsTrigger value="free">Piste gratuite</TabsTrigger>
+            <TabsList aria-label="Battle Pass tracks">
+              <TabsTrigger value="premium">Premium track</TabsTrigger>
+              <TabsTrigger value="free">Free track</TabsTrigger>
             </TabsList>
             {["premium", "free"].map((track) => (
               <TabsContent key={track} value={track}>
-                <Box className="rewards-grid">
+                <Box className="pass-rewards-heading">
+                  <Text className="eyebrow">SELECTED REWARDS</Text>
+                  <Text>{track === "premium" ? "01 — 100" : "FREE ACCESS"}</Text>
+                </Box>
+                <Box className="rewards-grid" data-track={track}>
                   {rewards
                     .filter((r) => track === "premium" || r.free)
                     .map((reward) => (
                       <Card className="reward-card" key={reward.level}>
-                        <Image
-                          src={`/images/${reward.image}.jpg`}
-                          alt={reward.name}
-                          rounded="none"
-                          style={{ objectPosition: reward.position }}
-                        />
-                        <Box>
-                          <Text className="eyebrow">PALIER {reward.level}</Text>
+                        <Box className="reward-art">
+                          <Image
+                            src={`/images/${reward.image}.jpg`}
+                            alt={reward.name}
+                            rounded="none"
+                            style={{ objectPosition: reward.position }}
+                          />
+                          <Text className="reward-level-chip">LVL {String(reward.level).padStart(2, "0")}</Text>
+                        </Box>
+                        <Box className="reward-info">
+                          <Text className="eyebrow">{reward.free ? "FREE REWARD" : "PREMIUM REWARD"}</Text>
                           <Heading level={3}>{reward.name}</Heading>
                           <Text>{reward.type}</Text>
                         </Box>
@@ -835,14 +854,14 @@ export default function Home() {
                 </Box>
                 <Paragraph className="track-description">
                   {track === "premium"
-                    ? "La piste premium réunit les récompenses gratuites et les objets exclusifs, jusqu’à l’armure Souverain au palier 100."
-                    : "La piste gratuite commence avec l’armure Éclaireur. Des défis imaginés pour découvrir les modes à votre rythme."}
+                    ? "The premium track includes free rewards and exclusive cosmetics, culminating in Sovereign armor at tier 100."
+                    : "The free track begins with Pathfinder armor. Explore the modes and take on challenges at your own pace."}
                 </Paragraph>
               </TabsContent>
             ))}
           </Tabs>
           <Text className="dialog-note">
-            Aperçu de démonstration. Aucun achat ni paiement disponible.
+            Concept preview. Purchases and payments are unavailable.
           </Text>
         </DialogContent>
       </Dialog>
@@ -856,12 +875,12 @@ export default function Home() {
         loop
         showThumbnails
         labels={{
-          dialog: "Galerie de gameplay",
-          close: "Fermer la galerie",
-          previous: "Image précédente",
-          next: "Image suivante",
-          thumbnails: "Choisir une capture",
-          goTo: (position) => `Afficher la capture ${position}`,
+          dialog: "Gameplay gallery",
+          close: "Close gallery",
+          previous: "Previous image",
+          next: "Next image",
+          thumbnails: "Choose a screenshot",
+          goTo: (position) => `Show screenshot ${position}`,
         }}
       />
 
@@ -871,7 +890,7 @@ export default function Home() {
           if (!open) setArticle(null);
         }}
       >
-        <DialogContent size="lg" closeLabel="Fermer" className="nexus-dialog">
+        <DialogContent size="lg" closeLabel="Close" className="nexus-dialog">
           {article !== null && (
             <>
               <Image
@@ -891,7 +910,7 @@ export default function Home() {
                 {articles[article].detail}
               </Paragraph>
               <Text className="dialog-note">
-                Carnet de création · Univers fictif Pimolu Games
+                Creative journal · The fictional world of Pimolu Games
               </Text>
             </>
           )}
@@ -900,20 +919,20 @@ export default function Home() {
 
       <Dialog open={playOpen} onOpenChange={setPlayOpen}>
         <DialogContent
-          closeLabel="Fermer"
+          closeLabel="Close"
           className="nexus-dialog setup-dialog"
         >
           <DialogHeader>
-            <Text className="eyebrow">VOTRE PROCHAINE MISSION</Text>
+            <Text className="eyebrow">YOUR NEXT MISSION</Text>
             <DialogTitle>
               {saved
-                ? `Prêt, ${pseudo.trim()} ?`
-                : "Préparez votre déploiement."}
+                ? `Ready, ${pseudo.trim()}?`
+                : "Prepare for deployment."}
             </DialogTitle>
             <DialogDescription>
               {saved
-                ? "Votre configuration a été enregistrée dans ce navigateur."
-                : "Créez votre profil de démonstration et choisissez votre terrain."}
+                ? "Your setup has been saved in this browser."
+                : "Create your demo profile and choose your battleground."}
             </DialogDescription>
           </DialogHeader>
           {saved ? (
@@ -928,31 +947,31 @@ export default function Home() {
                 {platform} · {pseudo.trim()}
               </Text>
               <Paragraph>
-                Pimolu Games est un concept créatif : aucune partie réelle n’est
-                lancée. Explorez les modes, les récompenses et les images pour
-                prolonger l’expérience.
+                Pimolu Games is a creative concept: no real match will start.
+                Explore the modes, rewards, and gallery to continue the
+                experience.
               </Paragraph>
               <Button className="cta" onClick={() => setPlayOpen(false)}>
-                Continuer l’exploration <ArrowRight size={16} />
+                Keep exploring <ArrowRight size={16} />
               </Button>
               <Button appearance="ghost" onClick={() => setSaved(false)}>
-                Modifier ma configuration
+                Edit my setup
               </Button>
             </Box>
           ) : (
             <Box className="setup-fields">
               <Input
-                label="Votre nom sur le terrain"
-                placeholder="Ex. Ghost_07"
+                label="Your battlefield name"
+                placeholder="E.g. Ghost_07"
                 value={pseudo}
                 onValueChange={setPseudo}
                 maxLength={20}
                 minLength={3}
                 autoComplete="nickname"
-                helperText="Entre 3 et 20 caractères."
+                helperText="3 to 20 characters."
               />
               <Text className="field-label" id="platform-label">
-                Votre plateforme
+                Your platform
               </Text>
               <SegmentedControl
                 aria-labelledby="platform-label"
@@ -966,7 +985,7 @@ export default function Home() {
                 ]}
               />
               <Text className="field-label" id="mode-label">
-                Votre mode de jeu
+                Your game mode
               </Text>
               <SegmentedControl
                 aria-labelledby="mode-label"
@@ -986,10 +1005,10 @@ export default function Home() {
                 onClick={saveSetup}
                 endIcon={<Check size={17} />}
               >
-                Enregistrer ma configuration
+                Save my setup
               </Button>
               <Text className="dialog-note">
-                Démonstration locale · Aucun compte créé · Aucun téléchargement
+                Local demo · No account created · No download
               </Text>
             </Box>
           )}
@@ -997,14 +1016,14 @@ export default function Home() {
       </Dialog>
 
       <Dialog open={creditsOpen} onOpenChange={setCreditsOpen}>
-        <DialogContent closeLabel="Fermer" className="nexus-dialog">
+        <DialogContent closeLabel="Close" className="nexus-dialog">
           <DialogHeader>
-            <DialogTitle>Les images derrière l’univers.</DialogTitle>
+            <DialogTitle>Images behind the world.</DialogTitle>
             <DialogDescription>
-              Pimolu Games est une vitrine indépendante de Pimolu UI. Les images de
-              Halo Infinite illustrent le concept et restent la propriété de
-              leurs ayants droit. Aucune affiliation avec Microsoft ou Halo
-              Studios.
+              Pimolu Games is an independent showcase for Pimolu UI. Halo
+              Infinite imagery illustrates the concept and remains the property
+              of its respective owners. This project is not affiliated with
+              Microsoft or Halo Studios.
             </DialogDescription>
           </DialogHeader>
           <Box className="credit-links">
@@ -1012,22 +1031,22 @@ export default function Home() {
               external
               href="https://store.steampowered.com/app/1240440/Halo_Infinite/"
             >
-              Captures de gameplay · Halo Infinite sur Steam
+              Gameplay screenshots · Halo Infinite on Steam
             </Link>
             <Link external href="https://www.steamgriddb.com/hero/127070">
-              Visuel principal · SteamGridDB / HalfSpeed
+              Hero artwork · SteamGridDB / HalfSpeed
             </Link>
             <Link
               external
               href="https://www.windowscentral.com/halo-infinite-concept-art-treasure-trove"
             >
-              Concept art d’Éden · Halo Infinite / Windows Central
+              Eden concept art · Halo Infinite / Windows Central
             </Link>
             <Link external href="https://pimolu.com">
               Interface · Pimolu UI
             </Link>
             <Link external href="https://lucide.dev">
-              Icônes · Lucide
+              Icons · Lucide
             </Link>
           </Box>
         </DialogContent>

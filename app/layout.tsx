@@ -22,13 +22,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   ),
-  title: "Pimolu Games — Un monde. Vos règles.",
+  title: "Pimolu Games — One World. Your Rules.",
   description:
-    "Découvrez Pimolu Games, un concept FPS immersif : Battle Royale, multijoueur et Battle Pass Fracture. Une expérience créée avec Pimolu UI.",
+    "Explore Pimolu Games, an immersive FPS concept featuring Battle Royale, multiplayer, and the Fracture Battle Pass. Built with Pimolu UI.",
   openGraph: {
-    title: "Pimolu Games — Un monde. Vos règles.",
-    description: "Le concept FPS signé Pimolu Games.",
-    locale: "fr_FR",
+    title: "Pimolu Games — One World. Your Rules.",
+    description: "An immersive FPS concept by Pimolu Games.",
+    locale: "en_US",
     type: "website",
     images: [{ url: "/images/hero.jpg", width: 3840, height: 1240 }],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="fr"
+      lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${display.variable}`}
     >
       <body>{children}</body>

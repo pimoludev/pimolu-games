@@ -61,36 +61,36 @@ afterEach(async () => {
 
 test("profile validates, saves locally, and restores the selected mode and platform", async () => {
   const { screen, fireEvent, within } = await setup();
-  fireEvent.click(screen.getByRole("button", { name: "Entrez dans l’arène" }));
+  fireEvent.click(screen.getByRole("button", { name: "Enter the arena" }));
   let dialog = screen.getByRole("dialog");
   fireEvent.click(
     within(dialog).getByRole("button", {
-      name: "Enregistrer ma configuration",
+      name: "Save my setup",
     }),
   );
   assert.match(
     within(dialog).getByRole("alert").textContent || "",
-    /au moins 3/,
+    /at least 3/,
   );
   fireEvent.change(within(dialog).getByRole("textbox"), {
     target: { value: "Ghost_07" },
   });
   fireEvent.click(within(dialog).getByRole("radio", { name: "Xbox" }));
-  fireEvent.click(within(dialog).getByRole("radio", { name: "MULTIJOUEUR" }));
+  fireEvent.click(within(dialog).getByRole("radio", { name: "MULTIPLAYER" }));
   fireEvent.click(
-    within(dialog).getByText("Enregistrer ma configuration", { exact: true }),
+    within(dialog).getByText("Save my setup", { exact: true }),
   );
   assert.deepEqual(JSON.parse(localStorage.getItem("nexus-player")!), {
     pseudo: "Ghost_07",
     platform: "Xbox",
     mode: "multi",
   });
-  assert.ok(within(dialog).getByText("Prêt, Ghost_07 ?"));
+  assert.ok(within(dialog).getByText("Ready, Ghost_07?"));
   fireEvent.click(
-    within(dialog).getByText("Continuer l’exploration", { exact: true }),
+    within(dialog).getByText("Keep exploring", { exact: true }),
   );
   assert.equal(document.querySelector('[role="dialog"]'), null);
-  fireEvent.click(screen.getByRole("button", { name: "Entrez dans l’arène" }));
+  fireEvent.click(screen.getByRole("button", { name: "Enter the arena" }));
   dialog = screen.getByRole("dialog");
   assert.equal(
     (within(dialog).getByRole("textbox") as HTMLInputElement).value,
@@ -107,26 +107,26 @@ test("profile validates, saves locally, and restores the selected mode and platf
 test("battle pass switches from premium rewards to the free track", async () => {
   const { screen, fireEvent, within } = await setup();
   fireEvent.click(
-    screen.getByRole("button", { name: "Explorer le Battle Pass" }),
+    screen.getByRole("button", { name: "Explore the Battle Pass" }),
   );
   const dialog = screen.getByRole("dialog");
-  assert.ok(within(dialog).getByRole("heading", { name: "Souverain" }));
-  fireEvent.click(within(dialog).getByRole("tab", { name: "Piste gratuite" }));
-  assert.ok(within(dialog).getByRole("heading", { name: "Éclaireur" }));
+  assert.ok(within(dialog).getByRole("heading", { name: "Sovereign" }));
+  fireEvent.click(within(dialog).getByRole("tab", { name: "Free track" }));
+  assert.ok(within(dialog).getByRole("heading", { name: "Pathfinder" }));
   assert.equal(
-    within(dialog).queryByRole("heading", { name: "Souverain" }),
+    within(dialog).queryByRole("heading", { name: "Sovereign" }),
     null,
   );
 });
 
 test("gallery opens, advances and closes with Escape", async () => {
   const { screen, fireEvent, within } = await setup();
-  fireEvent.click(screen.getByRole("button", { name: "Explorer le gameplay" }));
-  const dialog = screen.getByRole("dialog", { name: "Galerie de gameplay" });
+  fireEvent.click(screen.getByRole("button", { name: "Explore gameplay" }));
+  const dialog = screen.getByRole("dialog", { name: "Gameplay gallery" });
   fireEvent.click(
-    within(dialog).getByRole("button", { name: "Image suivante" }),
+    within(dialog).getByRole("button", { name: "Next image" }),
   );
-  assert.ok(within(dialog).getByText("L'union fait la force · Halo Infinite"));
+  assert.ok(within(dialog).getByText("Stronger together · Halo Infinite"));
   fireEvent.keyDown(dialog, { key: "Escape" });
   assert.equal(document.querySelector('[role="dialog"]'), null);
 });
@@ -134,13 +134,13 @@ test("gallery opens, advances and closes with Escape", async () => {
 test("mode selection transfers to profile setup", async () => {
   const { screen, fireEvent } = await setup();
   fireEvent.click(
-    screen.getByRole("button", { name: "Découvrir le mode ARÈNE CLASSÉE" }),
+    screen.getByRole("button", { name: "Explore RANKED ARENA mode" }),
   );
-  fireEvent.click(screen.getByRole("button", { name: "Choisir ce mode" }));
+  fireEvent.click(screen.getByRole("button", { name: "Choose this mode" }));
   assert.ok(screen.getByRole("textbox"));
   assert.equal(
     screen
-      .getByRole("radio", { name: "ARÈNE CLASSÉE" })
+      .getByRole("radio", { name: "RANKED ARENA" })
       .getAttribute("aria-checked"),
     "true",
   );

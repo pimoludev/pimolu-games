@@ -1,13 +1,13 @@
-# Crédits des visuels
+# Image credits
 
-Pimolu Games est une vitrine fictive de Pimolu UI, sans affiliation avec Microsoft ou Halo Studios. Les modes, noms de récompenses et saisons sont des contenus de démonstration.
+Pimolu Games is a fictional showcase for Pimolu UI and is not affiliated with Microsoft or Halo Studios. Its modes, reward names, and seasons are demonstration content.
 
-Les images de Halo Infinite appartiennent à leurs ayants droit. Elles servent de références visuelles pour ce prototype ; elles ne sont pas distribuées sous la licence de Pimolu UI. Pour exploiter ce template pour un autre jeu, les remplacer par ses propres visuels ou obtenir les droits nécessaires.
+Halo Infinite images remain the property of their respective owners. They serve as visual references for this prototype and are not distributed under the Pimolu UI license. Replace them with original imagery or obtain the necessary rights before using this template for another game.
 
-| Fichiers                                          | Source                                                                                                                                                                                                    |
-| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `public/images/hero.jpg`                          | [SteamGridDB, HalfSpeed](https://www.steamgriddb.com/hero/127070)                                                                                                                                         |
-| `public/images/world.jpg`                         | [Concept art Halo Infinite, Windows Central](https://www.windowscentral.com/halo-infinite-concept-art-treasure-trove)                                                                                     |
-| `public/images/gameplay-0.jpg` à `gameplay-6.jpg` | [Captures officielles, page Steam Halo Infinite](https://store.steampowered.com/app/1240440/Halo_Infinite/), récupérées via l’API publique `https://store.steampowered.com/api/appdetails?appids=1240440` |
+| Files | Source |
+| --- | --- |
+| `public/images/hero.jpg` | [SteamGridDB, HalfSpeed](https://www.steamgriddb.com/hero/127070) |
+| `public/images/world.jpg` | [Halo Infinite concept art, Windows Central](https://www.windowscentral.com/halo-infinite-concept-art-treasure-trove) |
+| `public/images/gameplay-0.jpg` to `gameplay-6.jpg` | [Official Halo Infinite Steam screenshots](https://store.steampowered.com/app/1240440/Halo_Infinite/), retrieved through the public Steam API |
 
-Interface : [Pimolu UI](https://github.com/pimoludev/ui), MIT. Icônes : [Lucide](https://lucide.dev), ISC. Polices : Geist, Geist Mono et Barlow Condensed, chargées et auto-hébergées par `next/font`.
+Interface: [Pimolu UI](https://github.com/pimoludev/ui), MIT. Icons: [Lucide](https://lucide.dev), ISC. Fonts: Geist, Geist Mono, and Barlow Condensed, loaded and self-hosted with `next/font`.

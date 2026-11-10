@@ -1,42 +1,85 @@
 # Pimolu Games
 
-An English FPS website template built with **Next.js 16**, **React 19**, **Pimolu UI**, and **Lucide**. It combines a dark visual style, electric green accents, Barlow Condensed typography, and cinematic imagery.
+![Pimolu Games showcase preview](public/images/preview.png)
 
-## Run locally
+**One world. Your rules.** Pimolu Games is a cinematic FPS website showcase built with [Pimolu UI](https://pimolu.com/). It presents a fictional game universe through a Battle Royale, squad multiplayer, a ranked arena, and the Fracture Battle Pass.
+
+The experience pairs bold typography, electric green accents, and gameplay imagery with an English interface. Explore the site to see how Pimolu UI can support a complete, responsive game presentation, from the first impression to the smallest interaction.
+
+## What this showcase demonstrates
+
+- **Game modes:** Battle Royale, Multiplayer, and Ranked Arena cards with detailed previews.
+- **Battle Pass:** a 100-tier season concept with free and premium reward tracks.
+- **Gameplay gallery:** six images, carousel controls, and a full-screen lightbox.
+- **Player setup:** nickname, platform, and preferred mode saved in the browser.
+- **World and updates:** editorial stories, visual sections, and an FAQ.
+- **Responsive interaction:** mobile navigation, accessible dialogs, keyboard controls, and reduced-motion support.
+
+Pimolu Games is a **website concept**, not a playable game. Modes, seasons, rewards, and player profiles are illustrative. There is no multiplayer server, download, account, or payment flow.
+
+## Built with Pimolu UI
+
+Pimolu components form the interface throughout the showcase:
+
+| Area | Components |
+| --- | --- |
+| Layout and typography | `Box`, `Heading`, `Paragraph`, `Text` |
+| Navigation and actions | `Navbar`, `Link`, `Button` |
+| Game modes and rewards | `Card`, `Badge`, `Image` |
+| Overlays and gallery | `Dialog`, `Lightbox`, `Tabs` |
+| Player setup | `Input`, `SegmentedControl`, `Alert` |
+| Additional content | `Accordion`, `Footer` |
+| Theme | `PimoluProvider` |
+
+The visual direction lives in [`app/globals.css`](app/globals.css), while [`app/page.tsx`](app/page.tsx) composes the experience. [Lucide](https://lucide.dev/) supplies the icons.
+
+## Tech stack
+
+- Next.js 16 App Router, React 19, and TypeScript
+- `@pimolu/react` and `@pimolu/web-styles`
+- `lucide-react`
+- ESLint and the Node.js test runner
+
+## Getting started
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. For production, run `npm run build` and then `npm start`.
+Open [http://localhost:3000](http://localhost:3000). No API keys or external services are needed for the local demo.
 
-## Checks
+For a production build:
 
-`npm test` runs four DOM tests covering player setup, Battle Pass tracks, gallery navigation, and mode selection. `npm run build` checks types and creates the production build.
+```sh
+npm run build
+npm run start
+```
 
-## Experience
+Set `NEXT_PUBLIC_SITE_URL` to the deployed site's full URL when generating social sharing metadata. Without it, the metadata uses `http://localhost:3000`.
 
-- Responsive navigation with a mobile menu.
-- Battle Royale, Multiplayer, and Ranked Arena modes with detailed previews.
-- Fracture Battle Pass with free and premium reward previews.
-- Six-image gameplay gallery with a full-screen lightbox.
-- Editorial updates and an accessible FAQ.
-- Player setup with nickname validation, platform and mode selection, and browser-local persistence.
-- Reduced-motion support and accessible controls.
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Build the production site and check types |
+| `npm run start` | Serve the production build |
+| `npm run lint` | Run ESLint |
+| `npm test` | Run interaction tests |
 
-The interface uses Pimolu UI components throughout: `Navbar`, `Button`, `Card`, `Badge`, `Dialog`, `Tabs`, `SegmentedControl`, `Input`, `Alert`, `Accordion`, `Lightbox`, `Image`, `Footer`, `Box`, `Heading`, `Paragraph`, `Text`, and `Link`. Lucide provides the icons.
+## Make it your own
 
-## Customize
+| What to change | Where to start |
+| --- | --- |
+| Modes, rewards, gallery, and stories | [`app/game-data.ts`](app/game-data.ts) |
+| Page copy and interactions | [`app/page.tsx`](app/page.tsx) |
+| Colour, typography, and responsive layout | [`app/globals.css`](app/globals.css) |
+| Fonts, language, and metadata | [`app/layout.tsx`](app/layout.tsx) |
+| Images | [`public/images/`](public/images/) |
 
-- `app/game-data.ts`: modes, rewards, gallery, and editorial content.
-- `app/page.tsx`: sections and interactions.
-- `app/globals.css`: theme, layout, and responsive styles.
-- `public/images/`: locally stored visuals.
-- `app/layout.tsx`: fonts and metadata. Set `NEXT_PUBLIC_SITE_URL` to the deployed site URL for Open Graph metadata.
+Demo player settings are stored only in the browser under `nexus-player`; they are not sent to a server. The Halo Infinite imagery is used as visual reference and remains the property of its owners. Review [image credits and reuse information](ASSETS.md) before adapting the project.
 
-## Scope
+## Resources
 
-Pimolu Games is a **fictional game concept and website template**. It has no game engine, matchmaking, download, authentication, or payments. Demo player settings are stored only in browser `localStorage` under `nexus-player`; no data is sent to a server.
-
-Halo Infinite images are visual references and are not royalty-free assets. See [ASSETS.md](./ASSETS.md) for sources and reuse information.
+- [Pimolu UI](https://pimolu.com/)
+- [Pimolu component catalogue](https://pimolu.com/components)
+- [Pimolu UI source](https://github.com/pimoludev/ui)

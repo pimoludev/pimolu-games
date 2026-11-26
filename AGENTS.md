@@ -26,6 +26,6 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 - `next.config.ts` enables Cache Components and Partial Prefetching. Legacy route-segment exports such as `dynamic`, `revalidate`, and `fetchCache` are rejected; consult the bundled Next docs before changing caching behavior.
 - Tailwind 4 is wired through the Turbopack `*.css` loader in `next.config.ts`, although most styling is plain CSS in `app/globals.css`.
-- `NEXT_PUBLIC_SITE_URL` sets the metadata base and defaults to `http://localhost:3000`.
+- `NEXT_PUBLIC_SITE_URL` overrides the metadata base; the default is `https://games.pimolu.com` so Open Graph images never point at localhost in production.
 - Tests use the Node test runner, Testing Library, and a manual JSDOM bootstrap—not Jest or Vitest. DOM globals and browser API stubs must be installed before dynamically importing `app/page.tsx`; only `tests/*.test.tsx` are selected.
 - Halo imagery is not covered by the project's MIT license. Read `ASSETS.md` before reusing or replacing it.

@@ -56,7 +56,7 @@ npm run build
 npm run start
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` to the deployed site's full URL when generating social sharing metadata. Without it, the metadata uses `http://localhost:3000`.
+Set `NEXT_PUBLIC_SITE_URL` to override the public site URL used by social sharing metadata. It defaults to `https://games.pimolu.com`.
 
 | Command | Purpose |
 | --- | --- |

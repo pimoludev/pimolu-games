@@ -20,7 +20,7 @@ const display = Barlow_Condensed({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    process.env.NEXT_PUBLIC_SITE_URL || "https://games.pimolu.com",
   ),
   title: "Pimolu Games — One World. Your Rules.",
   description:

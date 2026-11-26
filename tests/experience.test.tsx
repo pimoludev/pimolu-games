@@ -145,3 +145,13 @@ test("mode selection transfers to profile setup", async () => {
     "true",
   );
 });
+
+test("footer links to the project repository on GitHub", async () => {
+  const { screen } = await setup();
+  assert.equal(
+    screen
+      .getByRole("link", { name: "Pimolu Games on GitHub" })
+      .getAttribute("href"),
+    "https://github.com/pimoludev/pimolu-games",
+  );
+});

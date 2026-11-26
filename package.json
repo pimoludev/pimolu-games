@@ -10,24 +10,24 @@
     "test": "node --import tsx --test tests/*.test.tsx"
   },
   "dependencies": {
-    "@pimolu/react": "^0.1.0-beta.8",
-    "@pimolu/web-styles": "^0.1.0-beta.8",
-    "lucide-react": "^1.71.0",
+    "@pimolu/react": "^0.1.0-beta.11",
+    "@pimolu/web-styles": "^0.1.0-beta.11",
+    "lucide-react": "^1.81.0",
     "next": "16.4.6",
-    "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@tailwindcss/turbopack": "4.3.3",
+    "@tailwindcss/turbopack": "^4.3.5",
     "@testing-library/react": "^16.3.3",
     "@types/jsdom": "^21.1.7",
     "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/react": "^19.3.3",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
     "jsdom": "^26.1.0",
-    "tailwindcss": "4.3.3",
+    "tailwindcss": "^4.3.5",
     "tsx": "^4.23.15",
     "typescript": "^5"
   }

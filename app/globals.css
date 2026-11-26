@@ -121,7 +121,7 @@ button {
   background: #bff45c;
   color: #142008;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 1.7px;
 }
@@ -193,7 +193,7 @@ button {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 10px;
+  font-size: 11px;
   color: #d2d5d1;
 }
 .nexus .nav-cta {
@@ -258,7 +258,7 @@ button {
   gap: 10px;
   margin-bottom: 24px;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 2px;
   color: #dbe2d5;
 }
@@ -286,7 +286,7 @@ button {
 }
 .nexus .hero-description {
   color: #c0c9c4;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.85;
   margin-top: 26px;
   max-width: 420px;
@@ -318,7 +318,7 @@ button {
   gap: 21px;
   margin-top: 27px;
   color: #c2c9c0;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
@@ -329,7 +329,7 @@ button {
 }
 .hero-platforms > span:first-child {
   font-family: var(--font-geist-mono);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1px;
   color: #8f9d92;
 }
@@ -342,7 +342,7 @@ button {
   gap: 12px;
   color: #e4ecd180;
   font-family: var(--font-geist-mono);
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.8;
   letter-spacing: 1px;
 }
@@ -355,7 +355,7 @@ button {
   align-items: center;
   justify-content: space-between;
   font-family: var(--font-geist-mono);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1.4px;
 }
 .nexus .scroll-link {
@@ -385,7 +385,7 @@ button {
   align-items: center;
   gap: 12px;
   font-family: var(--font-geist-mono);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 1.5px;
   color: #adb5aa;
@@ -409,7 +409,7 @@ button {
 .eyebrow {
   font-family: var(--font-geist-mono), monospace !important;
   color: var(--accent);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1.8px;
   font-weight: 500;
   display: block;
@@ -430,7 +430,7 @@ button {
 }
 .nexus .section-intro {
   color: #929b93;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.9;
   margin-bottom: 2px;
 }
@@ -501,7 +501,7 @@ button {
   border: 1px solid #b6c5b53b;
   color: #edf2e8;
   font-family: var(--font-geist-mono);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 500;
   letter-spacing: 1px;
   gap: 6px;
@@ -511,7 +511,7 @@ button {
 }
 .mode-number {
   font-family: var(--font-geist-mono);
-  font-size: 10px;
+  font-size: 11px;
   color: #e5eed4bb;
 }
 .mode-bottom {
@@ -522,7 +522,7 @@ button {
 }
 .mode-format {
   font-family: var(--font-geist-mono);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1.2px;
   color: #c6d1bd;
 }
@@ -535,7 +535,7 @@ button {
 }
 .mode-bottom p {
   color: #b4bdb2;
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 9px;
 }
 .nexus .mode-link {
@@ -548,7 +548,7 @@ button {
   border-top: 1px solid #ffffff26;
   border-radius: 0;
   color: #e7ecdf;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
 }
 .nexus .mode-link:hover {
@@ -593,7 +593,7 @@ button {
   display: flex;
   gap: 20px;
   color: #d1d9c8;
-  font-size: 10px;
+  font-size: 11px;
   margin-block: 21px 27px;
 }
 .pass-points > span {
@@ -608,7 +608,7 @@ button {
 .pass-note {
   display: block;
   font-family: var(--font-geist-mono);
-  font-size: 7px;
+  font-size: 10px;
   color: #818d76;
   letter-spacing: 0.8px;
   margin-top: 16px;
@@ -659,7 +659,7 @@ button {
   color: #e4f2d4;
   border-color: #c4d7a744;
   background: #16211255;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1px;
   border-radius: 3px;
   backdrop-filter: blur(10px);
@@ -671,7 +671,7 @@ button {
   text-align: right;
 }
 .pass-featured .eyebrow {
-  font-size: 8px;
+  font-size: 10px;
 }
 .nexus .pass-featured h3 {
   font-family: var(--font-display);
@@ -681,7 +681,7 @@ button {
 }
 .pass-featured > span:last-child {
   color: #cbd4c2;
-  font-size: 9px;
+  font-size: 11px;
 }
 .reward-preview {
   display: grid;
@@ -726,7 +726,7 @@ button {
   bottom: 8px;
   left: 8px;
   font-family: var(--font-geist-mono);
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 1px;
   color: #f2f5ee;
 }
@@ -760,7 +760,7 @@ button {
 }
 .gallery-counter {
   font-family: var(--font-geist-mono);
-  font-size: 10px;
+  font-size: 11px;
   color: #e0e8d9;
   white-space: nowrap;
 }
@@ -841,7 +841,7 @@ button {
   gap: 9px;
   align-items: center;
   font-family: var(--font-geist-mono);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1.5px;
 }
 .expand-icon {
@@ -859,12 +859,12 @@ button {
 }
 .gallery-foot > span {
   font-family: var(--font-geist-mono);
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 1px;
   color: #7d8978;
 }
 .gallery-foot button {
-  font-size: 10px;
+  font-size: 12px;
   padding-inline: 0;
   color: #ced9c6;
   gap: 12px;
@@ -894,7 +894,7 @@ button {
   margin-top: 20px;
   gap: 10px;
   font-family: var(--font-geist-mono);
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 1px;
 }
 .news-meta > span:first-child {
@@ -913,7 +913,7 @@ button {
 .nexus .news-link {
   padding: 0;
   color: #929e8b;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   min-height: 30px;
   margin-top: 8px;
@@ -964,7 +964,7 @@ button {
 }
 .join-content .eyebrow {
   color: #cddcc2;
-  font-size: 8px;
+  font-size: 10px;
 }
 .nexus .join-content h2 {
   font-family: var(--font-display);
@@ -990,7 +990,7 @@ button {
   display: block;
   margin-top: 21px;
   font-family: var(--font-geist-mono);
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 1px;
   color: #a2b397;
 }
@@ -1003,12 +1003,12 @@ button {
 }
 .faq-list .pimolu-accordion__trigger {
   font-family: var(--font-geist-sans);
-  font-size: 12px;
+  font-size: 14px;
   padding-block: 18px;
   color: #d4ddce;
 }
 .faq-list .pimolu-accordion__content {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
   color: #9daa96;
 }
@@ -1019,17 +1019,17 @@ button {
 .site-footer .pimolu-footer__description {
   color: #9ca796;
   margin-top: 12px;
-  font-size: 12px;
+  font-size: 13px;
 }
 .site-footer .pimolu-footer__column-title {
   color: #9eaa95;
   font-family: var(--font-geist-mono);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1.2px;
 }
 .site-footer .pimolu-footer__link {
   color: #c1ccbb;
-  font-size: 11px;
+  font-size: 12px;
 }
 .site-footer .pimolu-footer__bottom {
   border-color: #ffffff15;
@@ -1038,35 +1038,55 @@ button {
 }
 .site-footer .pimolu-footer__copyright {
   font-family: var(--font-geist-mono);
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 0.7px;
   color: #7f8a78;
 }
 .footer-bottom {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 28px;
 }
 .footer-bottom > button {
-  font-size: 9px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  font-size: 11px;
   color: #9ca994;
   padding: 0;
-  min-height: 20px;
 }
-.footer-bottom > span {
+.footer-bottom > button.pimolu-button--ghost:hover:not(:disabled) {
+  background: transparent;
+}
+.footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-credit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-family: var(--font-geist-mono);
-  font-size: 7px;
+  font-size: 11px;
   letter-spacing: 0.5px;
   color: #828e7b;
-  display: flex;
-  gap: 6px;
-  align-items: center;
 }
 .footer-bottom a {
   color: #c9e5b2;
   display: inline-flex;
   align-items: center;
   gap: 3px;
+}
+.footer-bottom .github-link {
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  transition: color 0.2s;
+}
+.footer-bottom .github-link:hover {
+  color: var(--accent);
 }
 .nexus-dialog {
   font-family: var(--font-geist-sans), sans-serif;
@@ -1112,7 +1132,7 @@ button {
 }
 .dialog-note {
   display: block;
-  font-size: 10px;
+  font-size: 11px;
   color: #9ba990;
   line-height: 1.7;
   margin-top: 18px;
@@ -1172,7 +1192,7 @@ button {
 }
 .pass-dialog-banner-subtitle {
   font-family: var(--font-geist-mono);
-  font-size: 9px;
+  font-size: 11px;
   color: var(--accent);
   letter-spacing: 3px;
   margin-top: 10px;
@@ -1198,7 +1218,7 @@ button {
 }
 .pass-rewards-heading > span:last-child {
   font-family: var(--font-geist-mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 1px;
   color: #a8b89a;
 }
@@ -1238,7 +1258,7 @@ button {
   color: #d5ff84;
   border: 1px solid #8fbd56a1;
   font-family: var(--font-geist-mono);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -1257,11 +1277,11 @@ button {
   margin-block: 8px;
 }
 .reward-card .eyebrow {
-  font-size: 9px;
+  font-size: 11px;
 }
 .reward-info > span:last-child {
   font-family: var(--font-geist-mono);
-  font-size: 9px;
+  font-size: 11px;
   color: #a2b18e;
   margin-top: auto;
 }
@@ -1372,7 +1392,7 @@ button {
   }
   .pass-points {
     gap: 12px;
-    font-size: 9px;
+    font-size: 11px;
   }
   .gallery-heading-right {
     gap: 20px;
@@ -1381,7 +1401,7 @@ button {
     display: none;
   }
   .feature-strip-inner > span {
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 1px;
     gap: 8px;
   }
@@ -1436,7 +1456,7 @@ button {
     padding-block: 22px;
   }
   .feature-strip-inner > span {
-    font-size: 9px;
+    font-size: 11px;
   }
   .section {
     padding-block: 65px;
@@ -1447,7 +1467,7 @@ button {
   }
   .section-heading > .section-intro {
     max-width: 200px;
-    font-size: 11px;
+    font-size: 13px;
   }
   .mode-grid {
     gap: 12px;
@@ -1465,11 +1485,11 @@ button {
     font-size: 26px;
   }
   .mode-format {
-    font-size: 6px;
+    font-size: 10px;
     letter-spacing: 0.8px;
   }
   .mode-bottom p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .mode-number {
     display: none;
@@ -1523,7 +1543,7 @@ button {
     gap: 16px;
   }
   .news-meta {
-    font-size: 6px;
+    font-size: 10px;
     letter-spacing: 0.5px;
   }
   .news-meta > span:last-child {
@@ -1539,13 +1559,13 @@ button {
 }
 @media (max-width: 580px) {
   .announcement {
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 1px;
     gap: 10px;
     height: 30px;
   }
   .announcement-label {
-    font-size: 6px;
+    font-size: 10px;
     padding-right: 10px;
   }
   .wordmark > span:not(.wordmark-dot) {
@@ -1579,7 +1599,7 @@ button {
     padding-block: 190px 85px;
   }
   .hero-eyebrow {
-    font-size: 7px;
+    font-size: 10px;
     letter-spacing: 1.2px;
     margin-bottom: 20px;
   }
@@ -1588,7 +1608,7 @@ button {
     line-height: 0.92;
   }
   .nexus .hero-description {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
     margin-top: 23px;
   }
@@ -1607,11 +1627,11 @@ button {
   .hero-platforms {
     gap: 13px;
     flex-wrap: wrap;
-    font-size: 7px;
+    font-size: 10px;
     margin-top: 21px;
   }
   .hero-platforms > span:first-child {
-    font-size: 6px;
+    font-size: 10px;
   }
   .hero-platforms svg {
     width: 13px;
@@ -1619,7 +1639,7 @@ button {
   }
   .hero-bottom {
     bottom: 22px;
-    font-size: 6px;
+    font-size: 10px;
     letter-spacing: 1px;
   }
   .hero-edition {
@@ -1630,7 +1650,7 @@ button {
     padding-block: 21px;
   }
   .feature-strip-inner > span {
-    font-size: 7px;
+    font-size: 10px;
     letter-spacing: 0.7px;
     gap: 9px;
   }
@@ -1645,7 +1665,7 @@ button {
     margin-bottom: 25px;
   }
   .eyebrow {
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 1.4px;
   }
   .nexus .section-title {
@@ -1655,7 +1675,7 @@ button {
   .section-heading > .section-intro {
     max-width: none;
     margin-top: 17px;
-    font-size: 11px;
+    font-size: 13px;
   }
   .mode-grid {
     grid-template-columns: 1fr;
@@ -1677,16 +1697,16 @@ button {
     padding: 23px;
   }
   .mode-format {
-    font-size: 8px;
+    font-size: 10px;
   }
   .nexus .mode-title {
     font-size: 35px;
   }
   .mode-bottom p {
-    font-size: 12px;
+    font-size: 13px;
   }
   .nexus .mode-link {
-    font-size: 11px;
+    font-size: 12px;
   }
   .pass-layout {
     display: flex;
@@ -1704,12 +1724,12 @@ button {
   }
   .pass-points {
     flex-direction: row;
-    font-size: 10px;
+    font-size: 11px;
     gap: 20px;
   }
   .pass-note {
     max-width: none;
-    font-size: 6px;
+    font-size: 10px;
   }
   .pass-visual {
     min-height: 390px;
@@ -1754,7 +1774,7 @@ button {
   .gallery-heading-right .section-intro {
     display: block;
     margin-right: auto;
-    font-size: 10px;
+    font-size: 11px;
   }
   .gallery-controls {
     gap: 7px;
@@ -1780,13 +1800,13 @@ button {
     aspect-ratio: 1.5;
   }
   .gallery-foot > span {
-    font-size: 6px;
+    font-size: 10px;
     letter-spacing: 0.5px;
     max-width: 160px;
     line-height: 1.6;
   }
   .gallery-foot button {
-    font-size: 9px;
+    font-size: 12px;
     gap: 5px;
   }
   .news-section {
@@ -1797,7 +1817,7 @@ button {
     gap: 30px;
   }
   .news-meta {
-    font-size: 8px;
+    font-size: 10px;
   }
   .news-meta > span:last-child {
     display: inline;
@@ -1806,26 +1826,26 @@ button {
     font-size: 18px;
   }
   .nexus .news-link {
-    font-size: 11px;
+    font-size: 12px;
   }
   .join-section {
     min-height: 450px;
   }
   .join-content .eyebrow {
-    font-size: 7px;
+    font-size: 10px;
     letter-spacing: 1px;
   }
   .nexus .join-content h2 {
     font-size: 49px;
   }
   .join-content p {
-    font-size: 11px;
+    font-size: 13px;
     max-width: 280px;
     margin-inline: auto;
     line-height: 1.8;
   }
   .join-signature {
-    font-size: 6px;
+    font-size: 10px;
     line-height: 1.7;
     letter-spacing: 0.7px;
   }
@@ -1858,7 +1878,7 @@ button {
     font-size: 58px;
   }
   .pass-dialog-banner-subtitle {
-    font-size: 7px;
+    font-size: 10px;
     letter-spacing: 2px;
   }
   .reward-art {

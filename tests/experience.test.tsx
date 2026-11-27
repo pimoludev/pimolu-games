@@ -126,7 +126,7 @@ test("gallery opens, advances and closes with Escape", async () => {
   fireEvent.click(
     within(dialog).getByRole("button", { name: "Next image" }),
   );
-  assert.ok(within(dialog).getByText("Stronger together · Halo Infinite"));
+  assert.ok(within(dialog).getByText("Stronger together · Original concept"));
   fireEvent.keyDown(dialog, { key: "Escape" });
   assert.equal(document.querySelector('[role="dialog"]'), null);
 });

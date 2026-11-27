@@ -1,13 +1,9 @@
-# Image credits
+# Image credits and reuse notes
 
-Pimolu Games is a fictional showcase for Pimolu UI and is not affiliated with Microsoft or Halo Studios. Its modes, reward names, and seasons are demonstration content.
+Pimolu Games is a fictional showcase for Pimolu UI. Its modes, reward names, seasons, and science-fiction visuals are demonstration content.
 
-Halo Infinite images remain the property of their respective owners. They serve as visual references for this prototype and are not distributed under the Pimolu UI license. Replace them with original imagery or obtain the necessary rights before using this template for another game.
+The images in `public/images/hero.jpg`, `world.jpg`, and `gameplay-0.jpg` through `gameplay-6.jpg` were generated with an AI image-generation tool specifically for this demo. `preview.png` is a resized copy of the generated hero art. No Halo, Microsoft, SteamGridDB, or Windows Central imagery is included. The prompts requested original science-fiction designs without existing franchise characters, logos, or recognizable armor.
 
-| Files | Source |
-| --- | --- |
-| `public/images/hero.jpg` | [SteamGridDB, HalfSpeed](https://www.steamgriddb.com/hero/127070) |
-| `public/images/world.jpg` | [Halo Infinite concept art, Windows Central](https://www.windowscentral.com/halo-infinite-concept-art-treasure-trove) |
-| `public/images/gameplay-0.jpg` to `gameplay-6.jpg` | [Official Halo Infinite Steam screenshots](https://store.steampowered.com/app/1240440/Halo_Infinite/), retrieved through the public Steam API |
+AI-generated images do not come with a third-party stock-photo license or a guarantee of exclusivity. Review the image-generation provider's terms and applicable laws before commercial reuse; this note is not legal advice.
 
 Interface: [Pimolu UI](https://github.com/pimoludev/ui), MIT. Icons: [Lucide](https://lucide.dev), ISC. Fonts: Geist, Geist Mono, and Barlow Condensed, loaded and self-hosted with `next/font`.

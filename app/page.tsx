@@ -552,7 +552,7 @@ export default function Home() {
             </Box>
           </Box>
           <Box className="gallery-foot">
-            <Text>GAMEPLAY INSPIRATION · HALO INFINITE</Text>
+            <Text>ORIGINAL SCI-FI CONCEPT ART</Text>
             <Button
               appearance="ghost"
               onClick={() => openGallery(0)}
@@ -1046,28 +1046,13 @@ export default function Home() {
           <DialogHeader>
             <DialogTitle>Images behind the world.</DialogTitle>
             <DialogDescription>
-              Pimolu Games is an independent showcase for Pimolu UI. Halo
-              Infinite imagery illustrates the concept and remains the property
-              of its respective owners. This project is not affiliated with
-              Microsoft or Halo Studios.
+              Pimolu Games is an independent showcase for Pimolu UI. The
+              science-fiction images are original AI-generated concepts made
+              for this demo. See the asset notes for details.
             </DialogDescription>
           </DialogHeader>
           <Box className="credit-links">
-            <Link
-              external
-              href="https://store.steampowered.com/app/1240440/Halo_Infinite/"
-            >
-              Gameplay screenshots · Halo Infinite on Steam
-            </Link>
-            <Link external href="https://www.steamgriddb.com/hero/127070">
-              Hero artwork · SteamGridDB / HalfSpeed
-            </Link>
-            <Link
-              external
-              href="https://www.windowscentral.com/halo-infinite-concept-art-treasure-trove"
-            >
-              Eden concept art · Halo Infinite / Windows Central
-            </Link>
+            <Text>Hero, world, and gameplay images · AI-generated for Pimolu Games</Text>
             <Link external href="https://pimolu.com">
               Interface · Pimolu UI
             </Link>

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description: "An immersive FPS concept by Pimolu Games.",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/images/hero.jpg", width: 3840, height: 1240 }],
+    images: [{ url: "/images/hero.jpg", width: 1672, height: 941 }],
   },
 };
 

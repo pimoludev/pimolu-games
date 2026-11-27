@@ -50,32 +50,32 @@ export const gallery = [
   {
     src: "/images/gameplay-4.jpg",
     alt: "Close-range combat inside a futuristic facility",
-    caption: "In the thick of it · Halo Infinite",
+    caption: "In the thick of it · Original concept",
   },
   {
     src: "/images/gameplay-2.jpg",
     alt: "Two armored soldiers advance through an arena",
-    caption: "Stronger together · Halo Infinite",
+    caption: "Stronger together · Original concept",
   },
   {
     src: "/images/gameplay-6.jpg",
     alt: "A squad deploys from an aircraft",
-    caption: "Ready to deploy · Halo Infinite",
+    caption: "Ready to deploy · Original concept",
   },
   {
     src: "/images/gameplay-3.jpg",
     alt: "Red and blue armored soldiers face off",
-    caption: "No time to stand still · Halo Infinite",
+    caption: "No time to stand still · Original concept",
   },
   {
     src: "/images/gameplay-5.jpg",
     alt: "A team battle inside a red-lit base",
-    caption: "One final push · Halo Infinite",
+    caption: "One final push · Original concept",
   },
   {
     src: "/images/gameplay-1.jpg",
     alt: "Advanced technology among the mountains",
-    caption: "A world to claim · Halo Infinite",
+    caption: "A world to claim · Original concept",
   },
 ];
 

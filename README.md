@@ -1,6 +1,6 @@
 # Pimolu Games
 
-![Pimolu Games showcase preview](public/images/preview.png)
+![Original science-fiction key art](public/images/hero.jpg)
 
 **One world. Your rules.** Pimolu Games is a cinematic FPS website showcase built with [Pimolu UI](https://pimolu.com/). It presents a fictional game universe through a Battle Royale, squad multiplayer, a ranked arena, and the Fracture Battle Pass.
 
@@ -76,7 +76,7 @@ Set `NEXT_PUBLIC_SITE_URL` to override the public site URL used by social sharin
 | Fonts, language, and metadata | [`app/layout.tsx`](app/layout.tsx) |
 | Images | [`public/images/`](public/images/) |
 
-Demo player settings are stored only in the browser under `nexus-player`; they are not sent to a server. The Halo Infinite imagery is used as visual reference and remains the property of its owners. Review [image credits and reuse information](ASSETS.md) before adapting the project.
+Demo player settings are stored only in the browser under `nexus-player`; they are not sent to a server. The science-fiction images were AI-generated for this demo. Review [image credits and reuse information](ASSETS.md) before adapting the project.
 
 ## Resources
 

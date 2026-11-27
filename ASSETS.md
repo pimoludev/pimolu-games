@@ -1,8 +1,10 @@
 # Image credits and reuse notes
 
-Pimolu Games is a fictional showcase for Pimolu UI. Its modes, reward names, seasons, and science-fiction visuals are demonstration content.
+The [MIT license](LICENSE) covers the showcase source code. This file records the provenance and reuse notes for its visuals and third-party assets.
 
-The images in `public/images/hero.jpg`, `world.jpg`, and `gameplay-0.jpg` through `gameplay-6.jpg` were generated with an AI image-generation tool specifically for this demo. `preview.png` is a resized copy of the generated hero art. No Halo, Microsoft, SteamGridDB, or Windows Central imagery is included. The prompts requested original science-fiction designs without existing franchise characters, logos, or recognizable armor.
+Pimolu Games is a fictional showcase for Pimolu UI. Its modes, reward names, seasons, and FPS concept art are demonstration content.
+
+The images in `public/images/hero.jpg`, `world.jpg`, and `gameplay-0.jpg` through `gameplay-6.jpg` were generated with ImageGen specifically for this demo. `preview.png` shows the same hero art. The references informed the lighting, surface detail, and game camera perspectives. The scenes depict original characters, equipment, and locations on the fictional coastal map of Eden.
 
 AI-generated images do not come with a third-party stock-photo license or a guarantee of exclusivity. Review the image-generation provider's terms and applicable laws before commercial reuse; this note is not legal advice.
 

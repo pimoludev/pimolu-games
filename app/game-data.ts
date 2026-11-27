@@ -1,6 +1,6 @@
 export const modes = [
   {
-    id: "royale",
+    id: "royale" as const,
     name: "BATTLE ROYALE",
     tagline: "The final call is yours.",
     image: "world",
@@ -15,7 +15,7 @@ export const modes = [
     ],
   },
   {
-    id: "multi",
+    id: "multi" as const,
     name: "MULTIPLAYER",
     tagline: "Make every move count together.",
     image: "gameplay-2",
@@ -30,7 +30,7 @@ export const modes = [
     ],
   },
   {
-    id: "ranked",
+    id: "ranked" as const,
     name: "RANKED ARENA",
     tagline: "Your skill. Your ranking.",
     image: "gameplay-4",
@@ -46,35 +46,37 @@ export const modes = [
   },
 ];
 
+export type ModeId = (typeof modes)[number]["id"];
+
 export const gallery = [
   {
     src: "/images/gameplay-4.jpg",
-    alt: "Close-range combat inside a futuristic facility",
+    alt: "First-person view inside Eden’s turbine hall",
     caption: "In the thick of it · Original concept",
   },
   {
     src: "/images/gameplay-2.jpg",
-    alt: "Two armored soldiers advance through an arena",
+    alt: "Two competitors advance through a freight depot",
     caption: "Stronger together · Original concept",
   },
   {
     src: "/images/gameplay-6.jpg",
-    alt: "A squad deploys from an aircraft",
+    alt: "Parachutes descend toward Eden’s coast",
     caption: "Ready to deploy · Original concept",
   },
   {
     src: "/images/gameplay-3.jpg",
-    alt: "Red and blue armored soldiers face off",
+    alt: "Rivals in red and blue field gear face off in a rail yard",
     caption: "No time to stand still · Original concept",
   },
   {
     src: "/images/gameplay-5.jpg",
-    alt: "A team battle inside a red-lit base",
+    alt: "A squad moves through a ferry service tunnel",
     caption: "One final push · Original concept",
   },
   {
     src: "/images/gameplay-1.jpg",
-    alt: "Advanced technology among the mountains",
+    alt: "First-person rooftop view over Eden’s coastal town",
     caption: "A world to claim · Original concept",
   },
 ];

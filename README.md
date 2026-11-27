@@ -1,6 +1,6 @@
 # Pimolu Games
 
-![Original science-fiction key art](public/images/hero.jpg)
+![Pimolu Games campaign artwork](public/images/hero.jpg)
 
 **One world. Your rules.** Pimolu Games is a cinematic FPS website showcase built with [Pimolu UI](https://pimolu.com/). It presents a fictional game universe through a Battle Royale, squad multiplayer, a ranked arena, and the Fracture Battle Pass.
 
@@ -42,6 +42,8 @@ The visual direction lives in [`app/globals.css`](app/globals.css), while [`app/
 
 ## Getting started
 
+Use Node.js 24 or later. Node.js 22.13+ and 20.19+ are also supported within their respective major versions. Run these commands from the repository root.
+
 ```sh
 npm ci
 npm run dev
@@ -71,12 +73,25 @@ Set `NEXT_PUBLIC_SITE_URL` to override the public site URL used by social sharin
 | What to change | Where to start |
 | --- | --- |
 | Modes, rewards, gallery, and stories | [`app/game-data.ts`](app/game-data.ts) |
-| Page copy and interactions | [`app/page.tsx`](app/page.tsx) |
+| Homepage layout and shared interactions | [`app/page.tsx`](app/page.tsx) |
+| Navigation and announcement | [`app/components/site-header.tsx`](app/components/site-header.tsx) |
+| Hero and feature strip | [`app/components/hero-section.tsx`](app/components/hero-section.tsx) |
+| Mode cards and detail dialog | [`app/components/game-modes.tsx`](app/components/game-modes.tsx) |
+| Battle Pass section and rewards dialog | [`app/components/battle-pass.tsx`](app/components/battle-pass.tsx) |
+| Gallery carousel and lightbox | [`app/components/gameplay-gallery.tsx`](app/components/gameplay-gallery.tsx) |
+| News cards and article dialog | [`app/components/game-news.tsx`](app/components/game-news.tsx) |
+| Join section and FAQ | [`join-section.tsx`](app/components/join-section.tsx), [`game-faq.tsx`](app/components/game-faq.tsx) |
+| Footer and image credits | [`app/components/site-footer.tsx`](app/components/site-footer.tsx) |
+| Player setup dialog and browser storage | [`app/components/player-setup.tsx`](app/components/player-setup.tsx) |
 | Colour, typography, and responsive layout | [`app/globals.css`](app/globals.css) |
 | Fonts, language, and metadata | [`app/layout.tsx`](app/layout.tsx) |
 | Images | [`public/images/`](public/images/) |
 
-Demo player settings are stored only in the browser under `nexus-player`; they are not sent to a server. The science-fiction images were AI-generated for this demo. Review [image credits and reuse information](ASSETS.md) before adapting the project.
+Demo player settings are stored only in the browser under `nexus-player`; they are not sent to a server. The FPS concept images were AI-generated for this demo. Review [image credits and reuse information](ASSETS.md) before adapting the project.
+
+## License
+
+The source code is available under the [MIT License](LICENSE). See [ASSETS.md](ASSETS.md) for the visuals and third-party assets.
 
 ## Resources
 
